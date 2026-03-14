@@ -1,0 +1,196 @@
+@page {
+    size: A4;
+    margin: 0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+    width: 210mm;
+    height: 297mm;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: {{ fs }}pt;
+    color: #222;
+    background: #e5e7eb;
+}
+
+.resume {
+    display: flex;
+    width: 210mm;
+    height: 297mm;
+    overflow: hidden;
+    background: #fff;
+}
+
+.sidebar {
+    width: 68mm;
+    background: #0891b2;
+    color: #fff;
+    padding: 16mm 7mm 10mm 8mm;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar .avatar-placeholder {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.15);
+    margin: 0 auto 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.sidebar .section-title {
+    font-size: {{ fs * 1.0 }}pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid rgba(255,255,255,0.35);
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    margin-top: 4px;
+}
+
+.sidebar .contact-item {
+    font-size: {{ fs * 0.82 }}pt;
+    line-height: 1.35;
+    margin-bottom: 3px;
+    word-break: break-all;
+}
+
+.sidebar .skill-bar-group { margin-bottom: 4px; }
+
+.sidebar .skill-bar-label {
+    font-size: {{ fs * 0.82 }}pt;
+    margin-bottom: 2px;
+}
+
+.sidebar .skill-bar {
+    height: 5px;
+    background: rgba(255,255,255,0.25);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.sidebar .skill-bar-fill {
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+}
+
+.main {
+    flex: 1;
+    padding: 14mm 12mm 10mm 10mm;
+    overflow: hidden;
+}
+
+.main h1 {
+    font-size: {{ fs * 2 }}pt;
+    font-weight: 800;
+    color: #0891b2;
+    line-height: 1.1;
+    border-left: 4px solid #0891b2;
+    padding-left: 8px;
+}
+
+.main .title {
+    font-size: {{ fs * 1.05 }}pt;
+    color: #555;
+    margin-bottom: 8px;
+    padding-left: 12px;
+}
+
+.main .section-title {
+    font-size: {{ fs * 1.0 }}pt;
+    font-weight: 700;
+    color: #0891b2;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1.5px solid #0891b2;
+    padding-bottom: 2px;
+}
+
+.summary {
+    font-size: {{ fs }}pt;
+    line-height: 1.4;
+    color: #444;
+    margin-bottom: 3px;
+}
+
+.entry { margin-bottom: 7px; }
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.entry-header .company {
+    font-weight: 700;
+    font-size: {{ fs }}pt;
+    color: #0891b2;
+}
+
+.entry-header .dates {
+    font-size: {{ fs * 0.82 }}pt;
+    color: #888;
+    white-space: nowrap;
+}
+
+.entry .role {
+    font-size: {{ fs * 0.95 }}pt;
+    color: #555;
+    font-style: italic;
+}
+
+.entry ul { margin: 2px 0 0 16px; }
+
+.entry ul li {
+    font-size: {{ fs * 0.88 }}pt;
+    line-height: 1.35;
+    color: #444;
+    margin-bottom: 1px;
+}
+
+.edu-item { margin-bottom: 4px; }
+
+.edu-item .degree {
+    font-weight: 700;
+    font-size: {{ fs }}pt;
+}
+
+.edu-item .institution {
+    font-size: {{ fs * 0.9 }}pt;
+    color: #555;
+}
+
+.edu-item .year {
+    font-size: {{ fs * 0.82 }}pt;
+    color: #888;
+}
+
+.project-item { margin-bottom: 4px; }
+
+.project-item .proj-name {
+    font-weight: 700;
+    font-size: {{ fs }}pt;
+    color: #0891b2;
+}
+
+.project-item .proj-desc {
+    font-size: {{ fs * 0.9 }}pt;
+    color: #444;
+}
+
+.project-item .proj-url {
+    font-size: {{ fs * 0.78 }}pt;
+    color: #888;
+}

@@ -1,0 +1,135 @@
+@page {
+    size: A4;
+    margin: 0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+    width: 210mm;
+    height: 297mm;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: {{ fs }}pt;
+    color: #111;
+    background: #fff;
+}
+
+.resume {
+    width: 210mm;
+    height: 297mm;
+    padding: 18mm 20mm 14mm 20mm;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: {{ fs * 2.2 }}pt;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    text-align: center;
+    color: #111;
+    margin-bottom: 2px;
+}
+
+.contact-line {
+    text-align: center;
+    font-size: {{ fs * 0.82 }}pt;
+    color: #666;
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #111;
+    margin: 8px 0;
+}
+
+.section-title {
+    font-size: {{ fs * 0.85 }}pt;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: #444;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.summary {
+    font-size: {{ fs }}pt;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 3px;
+    font-weight: 300;
+}
+
+.entry { margin-bottom: 7px; }
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.entry-header .role-company {
+    font-size: {{ fs }}pt;
+    font-weight: 400;
+}
+
+.entry-header .role-company .role { font-weight: 500; }
+
+.entry-header .dates {
+    font-size: {{ fs * 0.82 }}pt;
+    color: #888;
+    white-space: nowrap;
+}
+
+.entry ul { margin: 2px 0 0 16px; }
+
+.entry ul li {
+    font-size: {{ fs * 0.9 }}pt;
+    line-height: 1.4;
+    color: #333;
+    font-weight: 300;
+    margin-bottom: 1px;
+    list-style-type: circle;
+}
+
+.edu-item {
+    font-size: {{ fs }}pt;
+    margin-bottom: 3px;
+    font-weight: 300;
+}
+
+.edu-item .degree { font-weight: 500; }
+.edu-item .year { color: #888; font-size: {{ fs * 0.85 }}pt; }
+
+.skills-line {
+    font-size: {{ fs }}pt;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.skills-line strong { font-weight: 500; }
+
+.project-item {
+    margin-bottom: 4px;
+    font-weight: 300;
+}
+
+.project-item .proj-name {
+    font-weight: 500;
+    font-size: {{ fs }}pt;
+}
+
+.project-item .proj-desc {
+    font-size: {{ fs * 0.9 }}pt;
+    color: #333;
+}
+
+.project-item .proj-url {
+    font-size: {{ fs * 0.78 }}pt;
+    color: #888;
+}

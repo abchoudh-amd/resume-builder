@@ -1,0 +1,7 @@
+PyYAML
+pydantic
+Jinja2
+WeasyPrint
+xhtml2pdf
+Flask
+click

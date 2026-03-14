@@ -1,0 +1,187 @@
+@page {
+    size: A4;
+    margin: 0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+    width: 210mm;
+    height: 297mm;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: {{ fs }}pt;
+    color: #222;
+    background: #f0f0f5;
+}
+
+.resume {
+    width: 210mm;
+    height: 297mm;
+    overflow: hidden;
+    background: #fff;
+}
+
+.header {
+    background: #4338ca;
+    color: #fff;
+    padding: 14mm 16mm 10mm 16mm;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: {{ fs * 2.4 }}pt;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 2px;
+}
+
+.header .title {
+    font-size: {{ fs * 1.1 }}pt;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.header .contact-line {
+    margin-top: 6px;
+    font-size: {{ fs * 0.78 }}pt;
+    opacity: 0.8;
+}
+
+.body-content {
+    padding: 8mm 14mm 8mm 14mm;
+    overflow: hidden;
+}
+
+.section-title {
+    font-size: {{ fs * 0.95 }}pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #4338ca;
+    border-bottom: 2px solid #4338ca;
+    padding-bottom: 2px;
+    margin-top: 8px;
+    margin-bottom: 6px;
+}
+
+.summary {
+    font-size: {{ fs }}pt;
+    line-height: 1.45;
+    color: #444;
+    margin-bottom: 3px;
+}
+
+.timeline { position: relative; padding-left: 18px; }
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    bottom: 4px;
+    width: 2px;
+    background: #c7d2fe;
+}
+
+.timeline-entry {
+    position: relative;
+    margin-bottom: 7px;
+}
+
+.timeline-entry::before {
+    content: "";
+    position: absolute;
+    left: -18px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #4338ca;
+    border: 2px solid #c7d2fe;
+}
+
+.timeline-entry .entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.timeline-entry .company {
+    font-weight: 700;
+    font-size: {{ fs }}pt;
+    color: #4338ca;
+}
+
+.timeline-entry .dates {
+    font-size: {{ fs * 0.8 }}pt;
+    color: #888;
+    white-space: nowrap;
+}
+
+.timeline-entry .role {
+    font-size: {{ fs * 0.92 }}pt;
+    color: #555;
+    font-style: italic;
+}
+
+.timeline-entry ul { margin: 2px 0 0 14px; }
+
+.timeline-entry ul li {
+    font-size: {{ fs * 0.88 }}pt;
+    line-height: 1.35;
+    color: #444;
+    margin-bottom: 1px;
+}
+
+.pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 4px;
+}
+
+.pill {
+    display: inline-block;
+    padding: 2px 9px;
+    font-size: {{ fs * 0.8 }}pt;
+    border-radius: 12px;
+    border: 1px solid #4338ca;
+    color: #4338ca;
+    background: #eef2ff;
+}
+
+.edu-item { margin-bottom: 3px; }
+
+.edu-item .degree {
+    font-weight: 700;
+    font-size: {{ fs }}pt;
+}
+
+.edu-item .institution {
+    font-size: {{ fs * 0.9 }}pt;
+    color: #555;
+}
+
+.edu-item .year {
+    font-size: {{ fs * 0.82 }}pt;
+    color: #888;
+}
+
+.project-item { margin-bottom: 4px; }
+
+.project-item .proj-name {
+    font-weight: 700;
+    font-size: {{ fs }}pt;
+    color: #4338ca;
+}
+
+.project-item .proj-desc {
+    font-size: {{ fs * 0.9 }}pt;
+    color: #444;
+}
+
+.project-item .proj-url {
+    font-size: {{ fs * 0.78 }}pt;
+    color: #888;
+}

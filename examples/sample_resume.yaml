@@ -1,0 +1,70 @@
+personal:
+  name: "Jane Doe"
+  title: "Senior Software Engineer"
+  email: "jane.doe@email.com"
+  phone: "+1-555-0100"
+  location: "San Francisco, CA"
+  linkedin: "linkedin.com/in/janedoe"
+  github: "github.com/janedoe"
+  summary: >-
+    Results-driven Senior Software Engineer with 10+ years of experience
+    building scalable distributed systems and leading cross-functional teams.
+    Expert in cloud-native architecture, microservices, and DevOps practices.
+    Passionate about clean code, mentoring, and delivering high-impact products.
+
+experience:
+  - company: "Acme Corp"
+    role: "Staff Engineer"
+    start: "2021-01"
+    end: "Present"
+    highlights:
+      - "Led migration from monolith to microservices, reducing deploy times by 70%"
+      - "Designed event-driven architecture handling 50K+ events/sec with Kafka"
+      - "Mentored 6 engineers; 3 promoted to senior within 18 months"
+      - "Reduced infrastructure costs by 35% through Kubernetes optimization"
+
+  - company: "Globex Inc"
+    role: "Senior Software Engineer"
+    start: "2018-03"
+    end: "2020-12"
+    highlights:
+      - "Built real-time analytics pipeline processing 2TB+ daily using Spark"
+      - "Implemented CI/CD pipelines cutting release cycles from weeks to hours"
+      - "Developed Go-based API gateway serving 10M+ requests/day at p99 < 50ms"
+
+  - company: "Initech Solutions"
+    role: "Software Engineer"
+    start: "2014-06"
+    end: "2018-02"
+    highlights:
+      - "Developed customer-facing React dashboard used by 500+ enterprise clients"
+      - "Optimized PostgreSQL queries reducing average response time by 60%"
+      - "Contributed to open-source monitoring tools with 2K+ GitHub stars"
+
+education:
+  - institution: "Massachusetts Institute of Technology"
+    degree: "M.S. Computer Science"
+    year: "2014"
+
+  - institution: "University of California, Berkeley"
+    degree: "B.S. Computer Science"
+    year: "2012"
+
+skills:
+  - category: "Languages"
+    items: ["Python", "Go", "TypeScript", "Java", "SQL"]
+  - category: "Cloud & Infra"
+    items: ["AWS", "GCP", "Kubernetes", "Docker", "Terraform"]
+  - category: "Data"
+    items: ["PostgreSQL", "Redis", "Kafka", "Spark", "Elasticsearch"]
+  - category: "Practices"
+    items: ["CI/CD", "Microservices", "TDD", "Agile", "System Design"]
+
+projects:
+  - name: "CloudWatch Pro"
+    description: "Open-source cloud cost monitoring CLI with real-time alerts and Slack integration"
+    url: "github.com/janedoe/cloudwatch-pro"
+
+  - name: "DataFlow Engine"
+    description: "Lightweight ETL framework for Python with pluggable connectors and schema validation"
+    url: "github.com/janedoe/dataflow-engine"
