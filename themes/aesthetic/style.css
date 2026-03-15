@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+    width: 210mm;
+    height: 297mm;
+    font-family: 'Inter', sans-serif;
+    font-size: {{ fs }}pt;
+    color: #333333;
+    background: #ffffff;
+    -webkit-print-color-adjust: exact;
+}
+
+.resume {
+    width: 210mm;
+    height: 297mm;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: #F8F8F8;
+    color: #333333;
+    text-align: center;
+    padding: 8mm 20mm 6mm;
+    margin-bottom: 4mm;
+    width: 100%;
+}
+
+.header h1 {
+    font-weight: 500;
+    font-size: {{ fs * 2.2 }}pt;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 2px;
+    color: #2D2D2D;
+}
+
+.header .title {
+    font-size: {{ fs * 1.1 }}pt;
+    font-weight: 400;
+    color: #777777;
+    margin-bottom: 4px;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: {{ fs * 0.85 }}pt;
+    color: #777777;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.contact-item svg {
+    color: #999999;
+}
+
+.resume-body {
+    padding: 0 20mm 14mm 20mm;
+    flex: 1;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.resume-body > .section-heading:first-child {
+    margin-top: 0;
+}
+
+.section-heading .icon {
+    display: flex;
+    align-items: center;
+    color: #999999;
+}
+
+.section-heading .title {
+    font-weight: 600;
+    font-size: {{ fs * 0.9 }}pt;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #333333;
+    white-space: nowrap;
+}
+
+.section-heading .line {
+    flex: 1;
+    height: 1px;
+    background: #DDDDDD;
+}
+
+.summary {
+    font-weight: 300;
+    font-size: {{ fs }}pt;
+    line-height: 1.45;
+    color: #555555;
+    margin-bottom: 16px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 14px;
+    margin-bottom: 16px;
+    border-left: 1px solid transparent;
+    margin-left: 6px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: 8px;
+    bottom: 0;
+    width: 1px;
+    background: #DDDDDD;
+}
+
+.timeline-entry {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.timeline-entry:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-entry .ring {
+    position: absolute;
+    left: -19px; /* 14px padding + 5px radius */
+    top: 4px;
+    width: 9px;
+    height: 9px;
+    background: #ffffff;
+    border: 1.5px solid #DDDDDD;
+    border-radius: 50%;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+
+.entry-title {
+    font-size: {{ fs }}pt;
+    color: #555555;
+}
+
+.entry-title .role {
+    font-weight: 600;
+    color: #333333;
+}
+
+.entry-title .company {
+    font-weight: 400;
+    color: #555555;
+}
+
+.entry-header .dates {
+    font-size: {{ fs * 0.85 }}pt;
+    color: #999999;
+    font-weight: 400;
+}
+
+.timeline-entry ul {
+    margin: 0 0 0 16px;
+    padding: 0;
+}
+
+.timeline-entry ul li {
+    font-weight: 300;
+    font-size: {{ fs * 0.95 }}pt;
+    line-height: 1.4;
+    color: #555555;
+    margin-bottom: 3px;
+}
+
+.skills {
+    margin-bottom: 16px;
+}
+
+.skill-row {
+    font-size: {{ fs }}pt;
+    line-height: 1.5;
+    margin-bottom: 4px;
+}
+
+.skill-category {
+    font-weight: 600;
+    color: #333333;
+    margin-right: 4px;
+}
+
+.skill-items {
+    font-weight: 300;
+    color: #555555;
+}
+
+.projects {
+    margin-bottom: 16px;
+}
+
+.project-item {
+    margin-bottom: 8px;
+}
+
+.project-header {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 2px;
+}
+
+.proj-name {
+    font-weight: 600;
+    font-size: {{ fs }}pt;
+    color: #333333;
+}
+
+.proj-url {
+    font-size: {{ fs * 0.8 }}pt;
+    color: #999999;
+}
+
+.proj-desc {
+    font-weight: 300;
+    font-size: {{ fs * 0.95 }}pt;
+    line-height: 1.4;
+    color: #555555;
+}
