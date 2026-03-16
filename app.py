@@ -75,4 +75,14 @@ def list_themes():
 
 
 if __name__ == "__main__":
+    import sys
+
+    if sys.platform == "win32":
+        import click._compat, click.utils
+
+        click._compat._default_text_stdout = lambda: sys.stdout
+        click._compat._default_text_stderr = lambda: sys.stderr
+        click.utils._default_text_stdout = lambda: sys.stdout
+        click.utils._default_text_stderr = lambda: sys.stderr
+
     app.run(debug=True, port=5000)
